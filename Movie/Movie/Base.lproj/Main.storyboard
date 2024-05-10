@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Movie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내부 file " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPJ-2Q-KYV">
+                                <rect key="frame" x="16" y="97" width="361" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="외부 file " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecM-xh-cX1">
+                                <rect key="frame" x="16" y="448" width="361" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEV-hc-j04">
+                                <rect key="frame" x="16" y="126" width="361" height="299"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="299" id="3T7-M4-xeM"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="vidio1Title"/>
+                                <connections>
+                                    <action selector="btnMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G9S-VS-m7C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgA-kN-Qk3">
+                                <rect key="frame" x="16" y="477" width="361" height="299"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="299" id="fC1-xs-xGS"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="vidio2Title"/>
+                                <connections>
+                                    <action selector="btnNetworkMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pRh-gY-qow"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aEV-hc-j04" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="126" id="2fG-U8-ekN"/>
+                            <constraint firstItem="aEV-hc-j04" firstAttribute="trailing" secondItem="bPJ-2Q-KYV" secondAttribute="trailing" id="4ow-Zj-cni"/>
+                            <constraint firstItem="cgA-kN-Qk3" firstAttribute="leading" secondItem="ecM-xh-cX1" secondAttribute="leading" id="6tQ-6M-Acs"/>
+                            <constraint firstItem="aEV-hc-j04" firstAttribute="trailing" secondItem="ecM-xh-cX1" secondAttribute="trailing" id="BkH-J9-eGf"/>
+                            <constraint firstItem="aEV-hc-j04" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Os7-tY-bCu"/>
+                            <constraint firstItem="ecM-xh-cX1" firstAttribute="top" secondItem="aEV-hc-j04" secondAttribute="bottom" constant="23" id="RWt-NZ-Kog"/>
+                            <constraint firstItem="aEV-hc-j04" firstAttribute="leading" secondItem="ecM-xh-cX1" secondAttribute="leading" id="bgS-Xu-jDO"/>
+                            <constraint firstItem="aEV-hc-j04" firstAttribute="top" secondItem="bPJ-2Q-KYV" secondAttribute="bottom" constant="8" id="kAy-ze-8pf"/>
+                            <constraint firstItem="aEV-hc-j04" firstAttribute="leading" secondItem="bPJ-2Q-KYV" secondAttribute="leading" id="ksP-jq-WS5"/>
+                            <constraint firstItem="cgA-kN-Qk3" firstAttribute="top" secondItem="ecM-xh-cX1" secondAttribute="bottom" constant="8" id="mlY-gM-epE"/>
+                            <constraint firstItem="aEV-hc-j04" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="oqA-OW-e11"/>
+                            <constraint firstItem="cgA-kN-Qk3" firstAttribute="trailing" secondItem="ecM-xh-cX1" secondAttribute="trailing" id="usK-Ar-725"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="vidio1Title" width="640" height="360"/>
+        <image name="vidio2Title" width="640" height="360"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
